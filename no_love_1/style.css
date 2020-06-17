@@ -1,0 +1,9 @@
+.title{
+    size: 10em;
+    margin-bottom: 2em;
+}
+
+.table-th{
+    border: 1px solid black;
+    height: 100px;
+}
