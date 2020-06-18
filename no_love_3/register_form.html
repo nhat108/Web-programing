@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <style>
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <?php 
+        $name ="";
+        $email="";
+        $website="";
+        $gender="";
+        $website="";
+
+        if($_SERVER["REQUEST_METHOD"]=="post")
+    ?>
+
+    <h1>PHP Form Validation Example</h1>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF "]);?>">
+        <table>
+            <tr>
+                <th>Name</th>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <th>Website</th>
+                <td>
+                    <input type="url" name="website">
+                </td>
+            </tr>
+            <tr>
+                <th>Comment</th>
+                <td>
+                    <textarea rows="5" name="comment"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio">
+                    <label>Female</label>
+                    <input type="radio">
+                    <label>Male</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <button type="button">Submit</button>
+
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
