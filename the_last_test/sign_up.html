@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign up</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color: red; text-align: center;">Sign Up</h2>
+    <form  enctype="multipart/form-data"
+    action="register.php"
+    method="POST"
+    onsubmit="return checkSignupValidator()">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type="text" id="username" name="username">
+                        <div class="error" id="username_error"></div>
+                    </td>
+                    
+                </tr>
+                
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" id="password" name="password">
+                        <div class="error" id="password_error"></div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>Confirm password</td>
+                    <td>
+                        <input type="password" id="confirm_password" name="confirm_password">
+                        <div class="error" id="confirm_password_error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Avatar</td>
+                    <td>
+                        <input type="file" name="avatar" id="avatar"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" checked><label>Male</label>
+                        <input type="radio" name="gender" value="female" ><label>Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Job</td>
+                    <td>
+                        <select name="job">
+                            <option value="student">Student</option>
+                            <option value="singer">Singer</option>
+                            <option value="fighter">Fighter</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favourite</td>
+                    <td>
+                        <input name="favourite[]" value="listen_to_music" type="checkbox"><label>Listen to music</label>
+                        <input name="favourite[]" value="watching_movie" type="checkbox"><label>Watching movie</label>
+                        <input name="favourite[]" value="reading_book" type="checkbox"><label>Reading book</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Register</button>
+                        <button type="reset">Reset</button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <script src="validator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Dang ky</title>
+    <style>
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color: red; text-align: center;">Đăng ký tài khoản mới</h2>
+    <p style="text-align: center;">Vui lòng điền đủ thông tin bên dưới để đăng ký tài khoản mới</p>
+    <form
+        method="POST"
+        enctype="multipart/form-data"
+        
+        style="display: inline-block; border: 1px solid black;   align-content: center; margin: 0 auto;">
+        <table style="background-color: powderblue; margin: 10px; align-content: center;">
+            <tr>
+                <th>Username</th>
+                <td><input type="text" name="username"></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>
+                    <input type="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <th>Confirm password</th>
+                <td><input type="password" name="confirm_password"></td>
+            </tr>
+            <tr>
+                <th>Avatar</th>
+                <td>
+                    <span></span>
+                    <button type="button" name="browse">Browse</button>
+                </td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>
+                    <input type="radio" name="female">
+                    <label>Female</label>
+                    <input type="radio" name="male">
+                    <label>Male</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Job</th>
+                <td><select name="job">
+                        <option value="student">Student</option>
+                        <option value="fighter">Fighter</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th>Favourite</th>
+                <td>
+                    <input type="checkbox" name="boxing">
+                    <label>Boxing</label>
+                    <input type="checkbox" name="Music">
+                    <label>Music</label>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>
+                    <input type="submit" name="submit">
+                    <button type="button" name="reset">Reset</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
